@@ -1,0 +1,68 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!-- A minimal Flowplayer setup to get you started -->
+
+
+    <!--
+        include flowplayer JavaScript file that does
+        Flash embedding and provides the Flowplayer API.
+    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.js"></script>
+    <script type="text/javascript" src="../5.2/flowplayer.min.js"></script>
+
+    <!-- some minimal styling, can be removed -->
+    <link rel="stylesheet" type="text/css" href="../5.2/skin/all-skins.css">
+
+    <!-- page title -->
+    <title>Minimal Flowplayer setup</title>
+
+</head>
+<body>
+
+<div id="page">
+
+    <h1>Minimal Flowplayer setup</h1>
+
+    <p>View commented source code to get familiar with Flowplayer installation.</p>
+
+    <!-- this A tag is where your Flowplayer will be placed. it can be anywhere -->
+    <!--<a-->
+    <!--href="../201211181505492622.swf"-->
+    <!--style="display:block;width:520px;height:330px"-->
+    <!--id="player">-->
+    <!--</a>-->
+    <div id="player2" style="width:530px; height:330px"></div>
+    <!-- this will install flowplayer inside previous A- tag. -->
+    <script>
+        flowplayer(
+            "player2",
+            "../5.2/flowplayer.swf", {
+                clip: {
+                    url: "../201211181505492622.swf",
+                    autoPlay: false,
+                    autoBuffering: true
+                }
+            }
+        );
+        //flowplayer("player", "../flowplayer-3.2.18.swf");
+    </script>
+
+
+    <!--
+        after this line is purely informational stuff.
+        does not affect on Flowplayer functionality
+    -->
+
+    <p>
+        If you are running these examples <strong>locally</strong> and not on some webserver you must edit your
+        <a href="http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager04.html">
+            Flash security settings</a>.
+    </p>
+
+
+</div>
+
+
+</body>
+</html>
